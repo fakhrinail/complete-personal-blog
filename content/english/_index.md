@@ -10,5 +10,5 @@ banner:
   button:
     enable: true
     label: "Go Through My Thoughts"
-    link: "https://fakhrinail.github.io/complete-personal-blog/blog"
+    link: "https://fakhrinail.github.io/blog"
 ---
