@@ -9,6 +9,6 @@ banner:
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Read My Articles"
+    label: "Go Through My Thoughts"
     link: "/blog"
 ---

@@ -3,34 +3,10 @@
 # main menu
 [[main]]
 name = "Home"
-pageRef = "/blog"
+pageRef = "/"
 weight = 1
 
 [[main]]
 name = "Blog"
 pageRef = "/blog"
 weight = 2
-
-[[main]]
-name = "About"
-pageRef = "/about"
-weight = 3
-
-[[main]]
-name = "Pages"
-weight = 4
-
-[[main]]
-parent = "Pages"
-name = "Categories"
-pageRef = "/categories"
-
-[[main]]
-parent = "Pages"
-name = "Contact"
-pageRef = "/contact"
-
-[[main]]
-parent = "Pages"
-name = "Elements"
-pageRef = "/elements"
