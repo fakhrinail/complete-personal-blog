@@ -1,20 +1,24 @@
-<div class="bg-body dark:bg-darkmode-body">
-  {{ $image:= .Params.image }}
-  {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
-  {{ end }}
-  <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
-    </a>
-  </h4>
-  {{ $categories:= .Params.categories }}
-  {{ if $categories }}
+<div class="bg-body dark:bg-darkmode-body flex items-center justify-between" href="{{ .RelPermalink }}">
+  <div class="flex-grow-0 mr-4">
+    <h4 class="mb-3">
+      <a href="{{ .RelPermalink }}">
+        {{ .Title }}
+      </a>
+    </h4>
+    <p class="mb-6">{{ .Summary }}</p>
+    {{ $categories:= .Params.categories }}
     <ul class="mb-4">
       <li class="mr-4 inline-block">
         <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
           <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
         </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-solid fa-calendar mr-1"></i>
+          <a
+            class="ms-1"
+            >{{ time.Format ":date_long" .Params.PublishDate }}
+          </a>
       </li>
       <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
@@ -29,9 +33,11 @@
         {{ end }}
       </li>
     </ul>
-  {{ end }}
-  <p class="mb-6">{{ .Summary }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
-    {{ T "read_more" }}
+  </div>
+  {{ $image := .Params.image }}
+  {{ if $image }}
+  <a class="w-24 h-24 ml-4 overflow-hidden" href="{{ .RelPermalink }}">
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-full object-cover") }}
   </a>
+  {{ end }}
 </div>
