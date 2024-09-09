@@ -1,13 +1,13 @@
 ---
-title: "How to build an Application with modern Technology"
+title: "First 6 Months in Telkomsel"
 meta_title: ""
-description: "this is meta description"
+description: "This is my experience of working as an IT staff in the biggest telco company in Indonesia"
 date: 2022-04-04T05:00:00Z
 image: "/images/image-placeholder.png"
-categories: ["Application", "Data"]
+categories: ["Work"]
 author: "John Doe"
-tags: ["nextjs", "tailwind"]
-draft: false
+tags: ["telkomsel", "work"]
+draft: true
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
